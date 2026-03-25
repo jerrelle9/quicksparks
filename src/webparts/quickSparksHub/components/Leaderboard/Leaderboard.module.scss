@@ -1,0 +1,27 @@
+.container {
+    font-family: var(--qs-font-family);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--qs-spacing-sm);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skeletonList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--qs-spacing-sm);
+}
+
+.skeletonRow {
+    display: flex;
+    align-items: center;
+    gap: var(--qs-spacing-base);
+    padding: var(--qs-spacing-md) var(--qs-spacing-base);
+    background: var(--qs-color-surface);
+    border-radius: var(--qs-radius-md);
+}

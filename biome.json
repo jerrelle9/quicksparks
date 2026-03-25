@@ -16,7 +16,11 @@
                 "recommended": true
             },
             "suspicious": {
-                "recommended": true
+                "recommended": true,
+                "noArrayIndexKey": "warn"
+            },
+            "style": {
+                "useImportType": "off"
             }
         }
     },

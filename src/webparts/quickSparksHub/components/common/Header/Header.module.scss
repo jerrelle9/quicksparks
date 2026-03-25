@@ -1,0 +1,55 @@
+.header {
+    padding: var(--qs-spacing-3xl) var(--qs-spacing-xl) var(--qs-spacing-xl);
+    font-family: var(--qs-font-family);
+}
+
+.greeting {
+    font-size: var(--qs-font-size-display);
+    font-weight: var(--qs-font-weight-bold);
+    color: var(--qs-color-text-primary);
+    margin: 0 0 var(--qs-spacing-sm);
+    line-height: 1.2;
+}
+
+.statsRow {
+    display: flex;
+    gap: var(--qs-spacing-xl);
+    flex-wrap: wrap;
+}
+
+.stat {
+    display: flex;
+    align-items: baseline;
+    gap: var(--qs-spacing-xs);
+}
+
+.statValue {
+    font-size: var(--qs-font-size-h1);
+    font-weight: var(--qs-font-weight-bold);
+    color: var(--qs-color-primary);
+}
+
+.statValueAccent {
+    composes: statValue;
+    color: var(--qs-color-accent-magenta);
+}
+
+.statLabel {
+    font-size: var(--qs-font-size-body);
+    color: var(--qs-color-text-muted);
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: var(--qs-spacing-xl) var(--qs-spacing-base);
+    }
+
+    .greeting {
+        font-size: var(--qs-font-size-h1);
+    }
+
+    .statValue,
+    .statValueAccent {
+        font-size: var(--qs-font-size-h2);
+    }
+}
